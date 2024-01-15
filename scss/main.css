@@ -1,0 +1,1326 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.l-columns {
+  display: grid;
+}
+.l-columns--1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+.l-columns--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.l-columns--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.l-columns--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.l-columns--5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.l-columns--6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+.l-columns--7 {
+  grid-template-columns: repeat(7, 1fr);
+}
+.l-columns--8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+.l-columns--9 {
+  grid-template-columns: repeat(9, 1fr);
+}
+.l-columns--10 {
+  grid-template-columns: repeat(10, 1fr);
+}
+.l-columns--11 {
+  grid-template-columns: repeat(11, 1fr);
+}
+.l-columns--12 {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.l-extreme {
+  display: flex;
+}
+.l-extreme__left-area {
+  margin-left: auto;
+}
+.l-extreme__right-area {
+  margin-right: auto;
+}
+.l-extreme__top-area {
+  margin-top: auto;
+}
+.l-extreme__bottom-area {
+  margin-bottom: auto;
+}
+.l-extreme__border-area {
+  margin-right: auto;
+  margin-left: auto;
+}
+.l-extreme__center-area {
+  margin: auto;
+}
+
+.l-flex {
+  display: flex;
+}
+.l-flex--direction-row {
+  flex-direction: row;
+}
+.l-flex--direction-colum {
+  flex-direction: column;
+}
+.l-flex--wrap {
+  flex-wrap: wrap;
+}
+.l-flex--justify-content-start {
+  justify-content: flex-start;
+}
+.l-flex--justify-content-end {
+  justify-content: flex-end;
+}
+.l-flex--justify-content-center {
+  justify-content: center;
+}
+.l-flex--justify-content-space-between {
+  justify-content: space-between;
+}
+.l-flex--justify-content-space-around {
+  justify-content: space-around;
+}
+.l-flex--justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+.l-flex--align-content-start {
+  align-content: flex-start;
+}
+.l-flex--align-content-end {
+  align-content: flex-end;
+}
+.l-flex--align-content-center {
+  align-content: center;
+}
+.l-flex--align-content-stretch {
+  align-content: stretch;
+}
+.l-flex--align-content-space-between {
+  align-content: space-between;
+}
+.l-flex--align-content-space-around {
+  align-content: space-around;
+}
+.l-flex--align-items-start {
+  align-items: self-start;
+}
+.l-flex--align-items-end {
+  align-items: flex-end;
+}
+.l-flex--align-items-center {
+  align-items: center;
+}
+.l-flex--align-items-stretch {
+  align-items: stretch;
+}
+.l-flex--align-items-baseline {
+  align-items: baseline;
+}
+
+.l-position-fixed {
+  position: fixed;
+}
+
+.l-position-absolute {
+  position: absolute;
+}
+
+.l-position-sticky {
+  position: sticky;
+}
+
+.l-position-relative {
+  position: relative;
+}
+
+:root {
+  --color-white-1: #FFFFFF;
+  --color-white-2: #FCFCFC;
+  --color-white-3: #FAFAFA;
+  --color-white-4: #F7F7F7;
+  --color-white-5: #F5F5F5;
+  --color-white-6: #F2F2F2;
+  --color-white-7: #F0F0F0;
+  --color-white-8: #EBEBEB;
+  --color-blue-1: #BDDCFF;
+  --color-blue-2: #8AC0FF;
+  --color-blue-3: #52A3FF;
+  --color-blue-4: #1F87FF;
+  --color-blue-5: #006DEB;
+  --color-blue-6: #0056B8;
+  --color-blue-7: #003B80;
+  --color-blue-8: #00244D;
+  --color-grey-1: #d9d9d9;
+  --color-grey-2: #c2c2c2;
+  --color-grey-3: #ababab;
+  --color-grey-4: #949494;
+  --color-grey-5: #7d7d7d;
+  --color-grey-6: #666666;
+  --color-grey-7: #4f4f4f;
+  --color-grey-8: #383838;
+  --color-red-1: #fed7d7;
+  --color-red-2: #feb2b2;
+  --color-red-3: #fc8181;
+  --color-red-4: #f56565;
+  --color-red-5: #e53e3e;
+  --color-red-6: #c53030;
+  --color-red-7: #9b2c2c;
+  --color-red-8: #742a2a;
+  --color-green-1: #c6f6d5;
+  --color-green-2: #9ae6b4;
+  --color-green-3: #68d391;
+  --color-green-4: #48bb78;
+  --color-green-5: #38a169;
+  --color-green-6: #2f855a;
+  --color-green-7: #276749;
+  --color-green-8: #22543d;
+  --color-yellow-1: #fefcbf;
+  --color-yellow-2: #faf089;
+  --color-yellow-3: #f6e05e;
+  --color-yellow-4: #ecc94b;
+  --color-yellow-5: #d69e2e;
+  --color-yellow-6: #b7791f;
+  --color-yellow-7: #975a16;
+  --color-yellow-8: #744210;
+}
+
+.g--color-white-1 {
+  color: var(--color-white-1);
+}
+
+.g--color-white-2 {
+  color: var(--color-white-2);
+}
+
+.g--color-white-3 {
+  color: var(--color-white-3);
+}
+
+.g--color-white-4 {
+  color: var(--color-white-4);
+}
+
+.g--color-white-5 {
+  color: var(--color-white-5);
+}
+
+.g--color-white-6 {
+  color: var(--color-white-6);
+}
+
+.g--color-white-7 {
+  color: var(--color-white-7);
+}
+
+.g--color-white-8 {
+  color: var(--color-white-8);
+}
+
+.g--color-blue-1 {
+  color: var(--color-blue-1);
+}
+
+.g--color-blue-2 {
+  color: var(--color-blue-2);
+}
+
+.g--color-blue-3 {
+  color: var(--color-blue-3);
+}
+
+.g--color-blue-4 {
+  color: var(--color-blue-4);
+}
+
+.g--color-blue-5 {
+  color: var(--color-blue-5);
+}
+
+.g--color-blue-6 {
+  color: var(--color-blue-6);
+}
+
+.g--color-blue-7 {
+  color: var(--color-blue-7);
+}
+
+.g--color-blue-8 {
+  color: var(--color-blue-8);
+}
+
+.g--color-grey-1 {
+  color: var(--color-grey-1);
+}
+
+.g--color-grey-2 {
+  color: var(--color-grey-2);
+}
+
+.g--color-grey-3 {
+  color: var(--color-grey-3);
+}
+
+.g--color-grey-4 {
+  color: var(--color-grey-4);
+}
+
+.g--color-grey-5 {
+  color: var(--color-grey-5);
+}
+
+.g--color-grey-6 {
+  color: var(--color-grey-6);
+}
+
+.g--color-grey-7 {
+  color: var(--color-grey-7);
+}
+
+.g--color-grey-8 {
+  color: var(--color-grey-8);
+}
+
+.g--color-red-1 {
+  color: var(--color-red-1);
+}
+
+.g--color-red-2 {
+  color: var(--color-red-2);
+}
+
+.g--color-red-3 {
+  color: var(--color-red-3);
+}
+
+.g--color-red-4 {
+  color: var(--color-red-4);
+}
+
+.g--color-red-5 {
+  color: var(--color-red-5);
+}
+
+.g--color-red-6 {
+  color: var(--color-red-6);
+}
+
+.g--color-red-7 {
+  color: var(--color-red-7);
+}
+
+.g--color-red-8 {
+  color: var(--color-red-8);
+}
+
+.g--color-green-1 {
+  color: var(--color-green-1);
+}
+
+.g--color-green-2 {
+  color: var(--color-green-2);
+}
+
+.g--color-green-3 {
+  color: var(--color-green-3);
+}
+
+.g--color-green-4 {
+  color: var(--color-green-4);
+}
+
+.g--color-green-5 {
+  color: var(--color-green-5);
+}
+
+.g--color-green-6 {
+  color: var(--color-green-6);
+}
+
+.g--color-green-7 {
+  color: var(--color-green-7);
+}
+
+.g--color-green-8 {
+  color: var(--color-green-8);
+}
+
+.g--color-yellow-1 {
+  color: var(--color-yellow-1);
+}
+
+.g--color-yellow-2 {
+  color: var(--color-yellow-2);
+}
+
+.g--color-yellow-3 {
+  color: var(--color-yellow-3);
+}
+
+.g--color-yellow-4 {
+  color: var(--color-yellow-4);
+}
+
+.g--color-yellow-5 {
+  color: var(--color-yellow-5);
+}
+
+.g--color-yellow-6 {
+  color: var(--color-yellow-6);
+}
+
+.g--color-yellow-7 {
+  color: var(--color-yellow-7);
+}
+
+.g--color-yellow-8 {
+  color: var(--color-yellow-8);
+}
+
+.g--background-color-white-1 {
+  background-color: var(--color-white-1);
+}
+
+.g--background-color-white-2 {
+  background-color: var(--color-white-2);
+}
+
+.g--background-color-white-3 {
+  background-color: var(--color-white-3);
+}
+
+.g--background-color-white-4 {
+  background-color: var(--color-white-4);
+}
+
+.g--background-color-white-5 {
+  background-color: var(--color-white-5);
+}
+
+.g--background-color-white-6 {
+  background-color: var(--color-white-6);
+}
+
+.g--background-color-white-7 {
+  background-color: var(--color-white-7);
+}
+
+.g--background-color-white-8 {
+  background-color: var(--color-white-8);
+}
+
+.g--background-color-blue-1 {
+  background-color: var(--color-blue-1);
+}
+
+.g--background-color-blue-2 {
+  background-color: var(--color-blue-2);
+}
+
+.g--background-color-blue-3 {
+  background-color: var(--color-blue-3);
+}
+
+.g--background-color-blue-4 {
+  background-color: var(--color-blue-4);
+}
+
+.g--background-color-blue-5 {
+  background-color: var(--color-blue-5);
+}
+
+.g--background-color-blue-6 {
+  background-color: var(--color-blue-6);
+}
+
+.g--background-color-blue-7 {
+  background-color: var(--color-blue-7);
+}
+
+.g--background-color-blue-8 {
+  background-color: var(--color-blue-8);
+}
+
+.g--background-color-grey-1 {
+  background-color: var(--color-grey-1);
+}
+
+.g--background-color-grey-2 {
+  background-color: var(--color-grey-2);
+}
+
+.g--background-color-grey-3 {
+  background-color: var(--color-grey-3);
+}
+
+.g--background-color-grey-4 {
+  background-color: var(--color-grey-4);
+}
+
+.g--background-color-grey-5 {
+  background-color: var(--color-grey-5);
+}
+
+.g--background-color-grey-6 {
+  background-color: var(--color-grey-6);
+}
+
+.g--background-color-grey-7 {
+  background-color: var(--color-grey-7);
+}
+
+.g--background-color-grey-8 {
+  background-color: var(--color-grey-8);
+}
+
+.g--background-color-red-1 {
+  background-color: var(--color-red-1);
+}
+
+.g--background-color-red-2 {
+  background-color: var(--color-red-2);
+}
+
+.g--background-color-red-3 {
+  background-color: var(--color-red-3);
+}
+
+.g--background-color-red-4 {
+  background-color: var(--color-red-4);
+}
+
+.g--background-color-red-5 {
+  background-color: var(--color-red-5);
+}
+
+.g--background-color-red-6 {
+  background-color: var(--color-red-6);
+}
+
+.g--background-color-red-7 {
+  background-color: var(--color-red-7);
+}
+
+.g--background-color-red-8 {
+  background-color: var(--color-red-8);
+}
+
+.g--background-color-green-1 {
+  background-color: var(--color-green-1);
+}
+
+.g--background-color-green-2 {
+  background-color: var(--color-green-2);
+}
+
+.g--background-color-green-3 {
+  background-color: var(--color-green-3);
+}
+
+.g--background-color-green-4 {
+  background-color: var(--color-green-4);
+}
+
+.g--background-color-green-5 {
+  background-color: var(--color-green-5);
+}
+
+.g--background-color-green-6 {
+  background-color: var(--color-green-6);
+}
+
+.g--background-color-green-7 {
+  background-color: var(--color-green-7);
+}
+
+.g--background-color-green-8 {
+  background-color: var(--color-green-8);
+}
+
+.g--background-color-yellow-1 {
+  background-color: var(--color-yellow-1);
+}
+
+.g--background-color-yellow-2 {
+  background-color: var(--color-yellow-2);
+}
+
+.g--background-color-yellow-3 {
+  background-color: var(--color-yellow-3);
+}
+
+.g--background-color-yellow-4 {
+  background-color: var(--color-yellow-4);
+}
+
+.g--background-color-yellow-5 {
+  background-color: var(--color-yellow-5);
+}
+
+.g--background-color-yellow-6 {
+  background-color: var(--color-yellow-6);
+}
+
+.g--background-color-yellow-7 {
+  background-color: var(--color-yellow-7);
+}
+
+.g--background-color-yellow-8 {
+  background-color: var(--color-yellow-8);
+}
+
+.g--border-color-white-1 {
+  border-color: var(--color-white-1);
+}
+
+.g--border-color-white-2 {
+  border-color: var(--color-white-2);
+}
+
+.g--border-color-white-3 {
+  border-color: var(--color-white-3);
+}
+
+.g--border-color-white-4 {
+  border-color: var(--color-white-4);
+}
+
+.g--border-color-white-5 {
+  border-color: var(--color-white-5);
+}
+
+.g--border-color-white-6 {
+  border-color: var(--color-white-6);
+}
+
+.g--border-color-white-7 {
+  border-color: var(--color-white-7);
+}
+
+.g--border-color-white-8 {
+  border-color: var(--color-white-8);
+}
+
+.g--border-color-blue-1 {
+  border-color: var(--color-blue-1);
+}
+
+.g--border-color-blue-2 {
+  border-color: var(--color-blue-2);
+}
+
+.g--border-color-blue-3 {
+  border-color: var(--color-blue-3);
+}
+
+.g--border-color-blue-4 {
+  border-color: var(--color-blue-4);
+}
+
+.g--border-color-blue-5 {
+  border-color: var(--color-blue-5);
+}
+
+.g--border-color-blue-6 {
+  border-color: var(--color-blue-6);
+}
+
+.g--border-color-blue-7 {
+  border-color: var(--color-blue-7);
+}
+
+.g--border-color-blue-8 {
+  border-color: var(--color-blue-8);
+}
+
+.g--border-color-grey-1 {
+  border-color: var(--color-grey-1);
+}
+
+.g--border-color-grey-2 {
+  border-color: var(--color-grey-2);
+}
+
+.g--border-color-grey-3 {
+  border-color: var(--color-grey-3);
+}
+
+.g--border-color-grey-4 {
+  border-color: var(--color-grey-4);
+}
+
+.g--border-color-grey-5 {
+  border-color: var(--color-grey-5);
+}
+
+.g--border-color-grey-6 {
+  border-color: var(--color-grey-6);
+}
+
+.g--border-color-grey-7 {
+  border-color: var(--color-grey-7);
+}
+
+.g--border-color-grey-8 {
+  border-color: var(--color-grey-8);
+}
+
+.g--border-color-red-1 {
+  border-color: var(--color-red-1);
+}
+
+.g--border-color-red-2 {
+  border-color: var(--color-red-2);
+}
+
+.g--border-color-red-3 {
+  border-color: var(--color-red-3);
+}
+
+.g--border-color-red-4 {
+  border-color: var(--color-red-4);
+}
+
+.g--border-color-red-5 {
+  border-color: var(--color-red-5);
+}
+
+.g--border-color-red-6 {
+  border-color: var(--color-red-6);
+}
+
+.g--border-color-red-7 {
+  border-color: var(--color-red-7);
+}
+
+.g--border-color-red-8 {
+  border-color: var(--color-red-8);
+}
+
+.g--border-color-green-1 {
+  border-color: var(--color-green-1);
+}
+
+.g--border-color-green-2 {
+  border-color: var(--color-green-2);
+}
+
+.g--border-color-green-3 {
+  border-color: var(--color-green-3);
+}
+
+.g--border-color-green-4 {
+  border-color: var(--color-green-4);
+}
+
+.g--border-color-green-5 {
+  border-color: var(--color-green-5);
+}
+
+.g--border-color-green-6 {
+  border-color: var(--color-green-6);
+}
+
+.g--border-color-green-7 {
+  border-color: var(--color-green-7);
+}
+
+.g--border-color-green-8 {
+  border-color: var(--color-green-8);
+}
+
+.g--border-color-yellow-1 {
+  border-color: var(--color-yellow-1);
+}
+
+.g--border-color-yellow-2 {
+  border-color: var(--color-yellow-2);
+}
+
+.g--border-color-yellow-3 {
+  border-color: var(--color-yellow-3);
+}
+
+.g--border-color-yellow-4 {
+  border-color: var(--color-yellow-4);
+}
+
+.g--border-color-yellow-5 {
+  border-color: var(--color-yellow-5);
+}
+
+.g--border-color-yellow-6 {
+  border-color: var(--color-yellow-6);
+}
+
+.g--border-color-yellow-7 {
+  border-color: var(--color-yellow-7);
+}
+
+.g--border-color-yellow-8 {
+  border-color: var(--color-yellow-8);
+}
+
+@media (min-width: none) {
+  .g--font-size-1\@xs {
+    font-size: 40px;
+  }
+  .g--font-size-2\@xs {
+    font-size: 50px;
+  }
+  .g--font-size-3\@xs {
+    font-size: 55px;
+  }
+  .g--font-size-4\@xs {
+    font-size: 70px;
+  }
+}
+@media (min-width: 567px) {
+  .g--font-size-1\@sm {
+    font-size: 40px;
+  }
+  .g--font-size-2\@sm {
+    font-size: 50px;
+  }
+  .g--font-size-3\@sm {
+    font-size: 55px;
+  }
+  .g--font-size-4\@sm {
+    font-size: 70px;
+  }
+}
+@media (min-width: 768px) {
+  .g--font-size-1\@md {
+    font-size: 40px;
+  }
+  .g--font-size-2\@md {
+    font-size: 50px;
+  }
+  .g--font-size-3\@md {
+    font-size: 55px;
+  }
+  .g--font-size-4\@md {
+    font-size: 70px;
+  }
+}
+@media (min-width: 992px) {
+  .g--font-size-1\@lg {
+    font-size: 40px;
+  }
+  .g--font-size-2\@lg {
+    font-size: 50px;
+  }
+  .g--font-size-3\@lg {
+    font-size: 55px;
+  }
+  .g--font-size-4\@lg {
+    font-size: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .g--font-size-1\@xl {
+    font-size: 40px;
+  }
+  .g--font-size-2\@xl {
+    font-size: 50px;
+  }
+  .g--font-size-3\@xl {
+    font-size: 55px;
+  }
+  .g--font-size-4\@xl {
+    font-size: 70px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

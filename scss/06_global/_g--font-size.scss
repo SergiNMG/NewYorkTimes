@@ -1,0 +1,30 @@
+$font-sizes: (
+    "1": 40px,
+    "2": 50px,
+    "3": 55px,
+    "4":70px
+);
+
+$breakpoints: (
+    "xs": none,
+    "sm": 567px,
+    "md": 768px,
+    "lg": 992px,
+    "xl":1200px
+);
+
+@each $breakpoint, $width in $breakpoints {
+    @media (min-width: $width) {
+        @each $size, $value in $font-sizes {
+            $separator: \@;
+
+            @if $breakpoint =="" {
+                $separator: "";
+            }
+
+            .g--font-size-#{$size}#{$separator}#{$breakpoint} {
+                font-size: $value;
+            }
+        }
+    }
+}
