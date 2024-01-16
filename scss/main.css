@@ -482,6 +482,42 @@ html {
   box-sizing: inherit;
 }
 
+.c-new-1 {
+  grid-area: a;
+}
+
+.c-new-1 {
+  grid-area: b;
+}
+
+.c-new-1 {
+  grid-area: c;
+}
+
+.c-new-2 {
+  grid-area: a;
+}
+
+.c-new-2 {
+  grid-area: b;
+}
+
+.c-new-2 {
+  grid-area: c;
+}
+
+.c-new-3 {
+  grid-area: a;
+}
+
+.c-new-3 {
+  grid-area: b;
+}
+
+.c-new-3 {
+  grid-area: c;
+}
+
 .l-columns {
   display: grid;
 }
@@ -520,6 +556,29 @@ html {
 }
 .l-columns--12 {
   grid-template-columns: repeat(12, 1fr);
+}
+
+.l-area-3 {
+  display: grid;
+  grid-template-areas: "a" "b" "c";
+}
+.l-area-3--acb-vertical {
+  grid-template-areas: "a" "c" "b";
+}
+.l-area-3--acb-horizontal {
+  grid-template-areas: "a c b";
+}
+.l-area-3--bca-vertical {
+  grid-template-areas: "b" "c" "a";
+}
+.l-area-3--bca-horizontal {
+  grid-template-areas: "b c a";
+}
+.l-area-3--bac-vertical {
+  grid-template-areas: "b" "a" "c";
+}
+.l-area-3--bac-horizontal {
+  grid-template-areas: "b a c";
 }
 
 .l-extreme {

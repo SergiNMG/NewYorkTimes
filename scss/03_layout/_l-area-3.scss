@@ -1,0 +1,43 @@
+.l-area-3 {
+    display: grid;
+    grid-template-areas:
+        "a"
+        "b"
+        "c";
+
+    &--acb-vertical {
+        grid-template-areas:
+            "a"
+            "c"
+            "b";
+    }
+
+    &--acb-horizontal {
+        grid-template-areas:
+            "a c b";
+    }
+
+    &--bca-vertical {
+        grid-template-areas:
+            "b"
+            "c"
+            "a";
+    }
+
+    &--bca-horizontal {
+        grid-template-areas:
+            "b c a";
+    }
+
+    &--bac-vertical {
+        grid-template-areas:
+            "b"
+            "a"
+            "c";
+    }
+
+    &--bac-horizontal {
+        grid-template-areas:
+            "b a c";
+    }
+}

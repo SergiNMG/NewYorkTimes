@@ -1,0 +1,18 @@
+$news: (
+    1,
+    2,
+    3
+);
+$areas: (
+    a,
+    b,
+    c
+);
+
+@each $new in $news {
+    @each $area in $areas {
+        .c-new-#{$new} {
+            grid-area: $area;
+        }
+    }
+}

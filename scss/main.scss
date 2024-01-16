@@ -1,7 +1,10 @@
 @import '02_base/normalize',
 '02_base/reset';
 
+@import '04_components/c-new';
+
 @import '03_layout/l-columns',
+'03_layout/l-area-3',
 '03_layout/l-extreme',
 '03_layout/l-flex',
 '03_layout/l-position';
